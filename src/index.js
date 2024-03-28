@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Hello from "./Hello.js";
-import App from "./App.js";
+import Card from "./Card.js";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Hello greetins={"i'm kesara" + "React is cool"} />
+    <Card />
   </React.StrictMode>
 );
 
