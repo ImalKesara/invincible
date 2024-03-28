@@ -2,14 +2,31 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Card from "./Card.js";
+import "tachyons";
+import { robots } from "./robots.js";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Card />
-    <Card />
-    <Card />
+    <Card
+      id={robots[0].id}
+      name={robots[0].name}
+      username={robots[0].username}
+      email={robots[0].email}
+    />
+    <Card
+      id={robots[1].id}
+      name={robots[1].name}
+      username={robots[1].username}
+      email={robots[1].email}
+    />
+    <Card
+      id={robots[2].id}
+      name={robots[2].name}
+      username={robots[2].username}
+      email={robots[2].email}
+    />
   </React.StrictMode>
 );
 
