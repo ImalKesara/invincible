@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "tachyons";
-import { robots } from "./robots.js";
+import App from "./App.js";
+// import { robots } from "./robots.js";
 import reportWebVitals from "./reportWebVitals";
-import Carlist from "./Cardlist.js";
+// import Carlist from "./Cardlist.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Carlist robots={robots} />);
+root.render(<App />);
 
 // ReactDOM.render(<h1> Hello world </h1>, document.getElementById("root"));
 
