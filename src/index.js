@@ -2,8 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "tachyons";
-import App from "./App.js";
-// import { robots } from "./robots.js";
+import App from "./Containers/App";
 import reportWebVitals from "./reportWebVitals";
 // import Carlist from "./Cardlist.js";
 
