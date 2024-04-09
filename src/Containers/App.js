@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Cardlist from "../Components/Cardlist";
 import SearchBox from "../Components/Searchbox";
 import Scroll from "../Components/Scroll";
+import ErrorBoundary from "../Components/ErrorBoundary";
 import "./App.css";
 
 class App extends Component {
@@ -28,13 +29,14 @@ class App extends Component {
   };
 
   render() {
-    const filteredRobots = this.state.robots.filter((robot) => {
+    const { robots, searchfield } = this.state;
+    const filteredRobots = robots.filter((robot) => {
       return robot.name
         .toLocaleLowerCase()
-        .includes(this.state.searchfield.toLocaleLowerCase());
+        .includes(searchfield.toLocaleLowerCase());
     });
 
-    if (this.state.robots.length === 0) {
+    if (robots.length === 0) {
       return <h1>Loading</h1>;
     } else {
       return (
@@ -42,7 +44,9 @@ class App extends Component {
           <h1 className="">RoboFriendz</h1>
           <SearchBox searchChange={this.onSearchCahnge} />
           <Scroll>
-            <Cardlist robots={filteredRobots} />;
+            <ErrorBoundary>
+              <Cardlist robots={filteredRobots} />;
+            </ErrorBoundary>
           </Scroll>
         </div>
       );
