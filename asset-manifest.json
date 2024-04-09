@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/invincible/static/css/main.c69a4b9a.css",
+    "main.js": "/invincible/static/js/main.25549d08.js",
+    "static/js/453.16f647b8.chunk.js": "/invincible/static/js/453.16f647b8.chunk.js",
+    "static/media/SEGA.woff": "/invincible/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
+    "index.html": "/invincible/index.html",
+    "main.c69a4b9a.css.map": "/invincible/static/css/main.c69a4b9a.css.map",
+    "main.25549d08.js.map": "/invincible/static/js/main.25549d08.js.map",
+    "453.16f647b8.chunk.js.map": "/invincible/static/js/453.16f647b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c69a4b9a.css",
+    "static/js/main.25549d08.js"
+  ]
+}
